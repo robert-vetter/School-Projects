@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1699721139 source:x:\3 robert\0 asg klasse 12\12 olympiaden\ioi\vorquali\0 quali contest 1\prob3\main\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<map>
+	<set>
+

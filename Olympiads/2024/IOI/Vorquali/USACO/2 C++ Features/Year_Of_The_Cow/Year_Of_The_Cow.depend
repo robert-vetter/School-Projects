@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1692461799 source:x:\3 robert\0 asg klasse 12\12 olympiaden\ioi\vorquali\usaco\2 c++ features\year_of_the_cow\main.cpp
+	<iostream>
+	<map>
+	<string>
+

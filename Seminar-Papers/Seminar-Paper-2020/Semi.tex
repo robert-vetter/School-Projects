@@ -1,0 +1,652 @@
+% \usepackage[option]{name} Pakete einbinden
+% \section{name} Überschrift
+% \subsection{name} Unterüberschrift
+% \subsubsection{name} Unterunterüberschrift
+% \begin{thebibliography}{tiefe}
+% \bibitem[name]{label} quelle
+% \end{thebibliography}
+% quelle= genaue Quellenangaben
+% tiefe=Einrückung des Textes(links) angegeben als Text z.B. xxxxx
+% name=Verweisname der Quelle
+% label=Label zum Verweis auf Quelle
+% \url{} Internetquelle
+% \cite{label} Verweis auf Quelle im Text
+% \include{pfad/name} Einbinden externer Kapitel auf neuer Seite
+% \input{pfad/name} Einbinden externer Kapitel ohne neue Seite
+% \newline neue Zeile
+% \\ neue Zeile
+% \par Absatz
+% \newpage neue Seite
+% \renewcommand{\baselinestretch}{wert} Zeilenabstand ändern für alle nachfolgenden Zeilen ab nächstem Absatz
+% \onehalfspacing Anderthalbfacher Zeilenabstand
+% \thispagestyle{empty} keine Seitenzahl
+% \setcounter{page}{n} Seitenzahl ändern
+% \textbf{text} fett
+% \textit{text} kursiv
+% \textsc{Text} Großbuchstaben
+% \emph{text} hervorgehoben
+% \uline{text} unterstrichen
+% \sout{text} durchgestrichen
+% \textcolor{color}{text} farbig
+% Farben: white, black, red, green, blue, cyan, magenta, yellow
+% \begin{center} Text zentrieren
+% text
+% \end{center}
+% \begin{flushleft} Text linksbündig
+% text
+% \end{flushleft}
+% \begin{flushright} Text rechtsbündig
+% text
+% \end{flushright}
+% \tiny winzig
+% \small klein
+% \large groß
+% \Large sehr groß
+% \huge riesig
+% \Huge sehr riesig
+% \normalsize Normalgröße
+% \ Silbentrennung nur an dieser Stelle
+% " zusätzliche Stelle zur Silbentrennung
+% \hyphenation{silbe1 -silbe2 -. . . -silben} Silbentrennung unbekannter Wörter(meist bei Umlauten) in Präambel
+% \mbox{NichtzutrennendesWort} Unterbinden der Silbentrennung
+% \begin{itemize} ungeordnete Liste
+% \item inhalt
+% \end{itemize}
+% \begin{itemize} ungeordnete Liste+Aufzählungszeichen
+% \item[(a)]
+% \end{itemize}
+% \begin{enumerate} geordnete Liste
+% \item inhalt
+% \end{enumerate}
+% \item neuer Listenpunkt
+% \textsuperscript{Zahl} Hochstellen
+% \textsubscript{Zahl} Tiefstellen
+% "` untere Anführungszeichen
+% " obere Anführungszeichen
+% \begin{tabbing}
+% \end{tabbing}
+% $Formel$ Formel im Text
+% \begin{displaymath} abgesetze Formel
+% Formel
+% \end{displaymath}
+% \begin{description}
+% item[Objekt] Erklärung
+% \end{description}
+% \begin{figure}[option] h,p or t
+% \begin{center} Zentrieren
+% \includegraphics[scale=size]{name} Größe z.B 0.75 | Dateiname
+% \caption{titel} Bilduntertitel
+% \end{center}
+% \end{figure}
+% $\rightarrow$ or $\to$ kurzer Pfeil nach rechts
+% $\longrightarrow$ langer Pfeil nach rechts
+% $\vert$ vertikaler Strich
+% \footnote[number]{text}
+%Präambel
+\documentclass[a4paper,11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[style=alphabetic]{biblatex}
+\usepackage[top=2.5cm, bottom=3.5cm, left=2.5cm, right=3.5cm]{geometry}
+\usepackage{qtree}
+\usepackage{footnote}
+\usepackage{csquotes}
+\usepackage{copyrightbox}
+%%%% figure-copyright
+    \usepackage{url}
+
+%\usepackage[url]
+%\usepackage[hyperref]
+\addto\captionsenglish{\renewcommand{\bibname}{References}}
+\begin{document}
+\setlength{\parindent}{0em}
+\begin{center}
+\Large{Spezialschulteil des Albert-Schweitzer-Gymnasiums}
+\end{center}
+\normalsize
+\thispagestyle{empty}
+
+\vspace{1cm}
+
+\includegraphics[scale=.6]{0 ASG Klasse 9/ASGSPEZ3b_schrg_1.png}
+\
+\begin{center}
+\vspace{1cm}
+\Large{Seminarfacharbeit Klasse 9}
+\end{center}
+\
+\begin{center}
+\Large{Schuljahr 2020/2021}
+\vspace{1cm}
+\end{center}
+\
+\hrule
+\vspace{0.2cm}
+\
+\begin{center}
+\Huge\textbf{Futuristisches Wohnen in Bezug auf Energieeffizienz}
+\vspace{0.2cm}
+\end{center}
+\hrule
+\normalsize
+\vspace{0.2cm}
+\vspace{1cm}
+
+\large{
+
+\begin{tabular}{ll}
+
+Seminarfachbetreuerin: & Frau Bangsow-Bösa \\
+\textcolor{white}{text} \\
+\par
+Fachbetreuer: & Herr Brenner, Test \\
+\textcolor{white}{text} \\
+\par
+Gruppenmitglieder: & Robert Vetter, Lorenz Kunze, Edgar König \\
+\textcolor{white}{text} \\
+\par
+Datum: & \today \\
+
+\end{tabular}
+}
+
+\normalsize
+
+\newpage
+\setcounter{page}{1}
+\tableofcontents
+%Inhalt:
+%1 Einleitung
+\newpage
+\section{Einleitung}
+Barack Obama sagte einst:
+"`Als Präsident und als Vater weigere ich mich, unseren Kindern einen Planeten zu hinterlassen,
+der nicht mehr reparieret werden kann."
+\footnote{Barack Obama; http://www.die-klimaschutz-baustelle.de/
+zitate\_energiewende\_politik.html}
+Dieses Zitat zu der Verschmutzung der Luft durch CO\textsubscript{2}-ausstoßende Anlagen ist
+heute aktueller denn je. Es bezieht sich auf die nicht im Überfluss vorhandene Energie, weswegen
+die effektive Nutzung und umweltfreundliche Generation dieser essentiell für sämtliche Länder
+dieser Erde ist. Aus diesem Grund erscheint es als enorm wichtig, dass Energie gespart wird, wo
+sie entbehrbar ist. Wir entschieden uns für dieses Thema, da das damals eher vernachlässigte
+Thema des Energiesparens heutzutage immer mehr an Bedeutung gewinnt und wir an der
+Verbesserung des Weltklimas mitwirken wollen.
+\par
+Im Rahmen dieser Seminarfacharbeit soll ein wichtiger Eckpfeiler dieser Thematik näher
+beleuchtet und vorgestellt werden: \textbf{Die möglichst effektive Nutzung von Energie in
+Wohnhäusern.}
+\par
+Zunächst soll dem Leser dieser Arbeit unsere Vorstellung von solch einem Haus dargelegt
+werden, um später unser selbstgedrucktes Modell-Energiesparhaus präsentieren zu können.
+\par
+Danach werden wir auf Gemeinsamkeiten und Unterschiede des Hauses mit schon gebauten
+Energiesparhäusern eingehen, wobei anschließend eine Zusammenfassung der Erkenntnisse
+mitsamt einer kritischen Würdigung den Schlussteil dieser Arbeit bildet.
+\par
+Im Anschluss bedanken wir uns recht herzlich bei unserem Fachbetreuer Herrn Brenner, unserer
+Seminarfachbetreuerin Frau Bangsow-Bösa sowie Herrn Paulig, der uns bei der Erstellung des 3D-Drucks begleitet hat.
+%2 Geschichtliche Hintergründe von Energiesparhäusern
+\newpage
+\section{Geschichtliche Hintergründe von Energiesparhäusern}
+Das Wohnen ist einer der größten Energieverbraucher des Menschen. Früher war der Verbrauch
+wesentlich geringer. Bis Mitte des 20. Jahrhunderts war es üblich mit Kohle zu heizen.
+\footnote{https://heizung.de/heizung/wissen/geschichte-der-heizung-der-weg-vom-feuer-zur-heizungsanlage/} Erst danach wurden die Kohleheizungen langsam durch Gasheizungen ersetzt.
+Auch
+elektrischer Strom wurde erst spät in die Haushalte eingeführt und hauptsächlich für Lampen
+benutzt. Meist konnte sich die arme Bevölkerung den Strom kaum leisten und ging sehr sparsam mit ihm um. Auch die Art und Weise, wie Energie verbraucht wurde, veränderte sich stark. Innerhalb
+der letzten hundert Jahre verbrachten die Menschen durch den zunehmenden Wohlstand immer
+mehr Zeit zu Hause. Außerdem lebten immer weniger Menschen auf engem Raum. All das führte
+zu einer Zunahme des Energieverbrauchs.
+Der Häuserbau fokussierte sich immer mehr darauf, möglichst viele Wohnungen auf geringer
+Fläche bereitzustellen. Somit entstanden ab 1930 die ersten Plattenbauten, welche sehr populär
+in Deutschland wurden. Sie können durch eine Zentralheizung geheizt werden, was Heizenergie
+spart.\footnote{https://de.wikipedia.org/wiki/Plattenbau}
+\par
+Das erste funktionsfähige und zweckmäßige Energiesparhaus war ein Polarschiff namens „Fram“.
+Es wurde 1883 gebaut und die Wände und Decken wurden zur Kälteisolierung mit verschiedenen
+Schichten und Materialien abgedichtet. Die Fenster wurden zur \par Wärmeerhaltung verdreifacht,
+weswegen der Ofen aufgrund der durchgehend konstanten Temperatur nur sehr selten betrieben
+werden musste.\footnote{https://passiv.de/former\_conferences/Passivhaus\_D/
+Geschichte\_Passivhaus.html}
+Die Umsetzung dieser Idee auf ein Haus erfolgte in den 1970er Jahren. Aus diesem Projekt
+wurden wichtige Erkenntnisse für die darauffolgende Entwicklung von Niedrigenergiehäusern
+geschaffen. Bei diesen Versuchen gab es jedoch wesentliche Probleme. Zum einen gab es noch
+keine wirkliche Lösung für energieeffiziente Fenster und in diesen Häusern steckte eine sehr
+komplizierte Technik. Diese funktionierte nicht zuverlässig und war für den Seriengebrauch viel zu
+kostspielig. Nach mehreren Jahren der Testphase entstand in einem deutsch-schwedischen
+Projekt ein zukunftsorientiertes Energiesparhaus. Es besaß eine durchdachte Wärmedämmung,
+kälteisolierte Fenster und eine geregelte Lüftung, welches den Grundbaustein für die modernen
+Niedrigenergiehäuser legte.\footnote{https://de.wikipedia.org/wiki/Passivhaus}
+\newpage
+%3 Die Entwicklung eines selbst entworfenen Energiesparhauses
+\section{Die Entwicklung eines selbst entworfenen Energiesparhauses}
+\par
+%3.1 Erstellung möglicher und reeller Grundkonzepte
+\subsection{Erstellung möglicher und reeller Grundkonzepte}
+Um einen niedrigen Energieverbrauch zu garantieren, müssen Konzepte für die Energieversorgung
+des Hauses erstellt werden. Unser Ziel ist es, Anlagen zur Energiegewinnung mit einzubeziehen,
+sodass das Haus möglichst autonom, also unabhängig von Stromzufuhr von außen genutzt werden kann. 
+%3.1.1 Photovoltaikanlage
+\subsubsection{Photovoltaikanlage}
+Die herkömmlichsten erneuerbaren Energieträger sind Solarzellen. Diese basieren
+auf der optischen Anregung eines Halbleiters. Im Prinzip funktioniert eine netzgekoppelte
+Photovoltaikanlage ganz einfach: Wenn Licht auf die Solarzelle fällt, werden Elektronen losgelöst,
+welche anschließend einen Stromfluss bewirken. Dieses ist mit einer Batterie
+vergleichbar. Jetzt kann ein Verbraucher angeschlossen werden, in welchem nun Strom fließt.\footnote{https://www.solaranlage.de/technik/solarzellen}
+Für ein Energiesparhaus wäre ein Flachdach wesentlich energieeffizienter, da so den ganzen Tag
+die komplette Sonnenenergie genutzt werden kann. Bei einem gebräuchlichen Satteldach könnte
+aufgrund der Nord -und Südausrichtung der beiden Dachflächen nur die Südseite die höchste Menge Strom
+erzeugen, womit eine reduzierte Energieumwandlungsrate folgen würde. Da
+Photovoltaikanlagen im Vergleich zu anderen erneuerbaren Energieträgern den meisten Strom
+erzeugen, wäre eine Ausweitung der Dachflächen durchaus angebracht. Hierbei würde sich an der
+Dachkante nach oben ausfahrbare Solarmodule eignen. Diese könnten durch das Signal eines 
+Lichtsensors bei hoher Sonnenintensität genutzt werden, welches die Energieumwandlungsrate
+dieser Solarzellen erheblich steigern würde.
+%3.1.2 Wasserturbine
+\subsubsection{Wasserturbine}
+Wasserturbinen werden zur Umwandlung von kinetischer und potenzieller Energie in
+Rotationsenergie genutzt. Dabei fällt Wasser aus einer gewissen Höhe mit einer gewissen
+Geschwindigkeit und bringt die Turbinenwelle zum Drehen.Dieses Prinzip wurde genutzt, um
+Arbeitsmaschinen anzutreiben. Heutzutage wird diese elektrische Energie meistens mittels eines Generators umgewandelt. Da im Haushalt viel Abwasser anfällt, wäre es möglich, diese
+Energie zu nutzen.
+%3.1.3 Kinetische Fußboden
+\subsubsection{Kinetischer Fußboden}
+Das Londoner Start-up-Unternehmen Pavegen hat einen Fußboden entwickelt, der beim
+darüber laufen die Energie in elektrische Energie umwandelt. Das Betreten des Bodens lässt eine
+elektromagnetische Spule rotieren, die Strom erzeugt. So hat der Fußboden nach jedem Schritt je
+nach Gewicht eine Leistung von ca. 5W.\footnote{https://www.trendsderzukunft.de/5-watt-strom-pro-schritt-bodenkacheln-liefern-bei-beruehrung-energie/} Einen solchen Boden kann man
+großflächig in Büros, öffentlichen Plätzen oder Wohnhäusern verwenden. In Rio de Janeiro gibt es
+sogar ein Fußballfeld, dessen Beleuchtung ausschließlich mit Strom betrieben wird, der von
+Kinetik-Platten unter dem Rasen erzeugt wird.\footnote{https://www.ingenieur.de/technik/fachbereiche/energie/brasilianischer-fussballnachwuchs-erzeugt-laufen-strom-fuers-flutlicht/} Der
+Vorteil dieser Stromquelle ist, dass sie nicht von äußeren Einflüssen abhängig ist und in der Zeit,
+in der am meisten Strom genutzt wird, am produktivsten ist.
+%3.1.4 Energiespeicher
+\subsubsection{Energiespeicher}
+Da die Effizienz der Photovoltaikanlage von Tageszeiten und dem Wetter abhängig ist, wird ein
+Energiespeicher benötigt. Dazu kommt, dass zu der Zeit in der am meisten elektrische Energie
+produziert wird, also zur Mittagszeit, kaum Strom verbraucht wird. Der Speicher muss also groß
+genug sein, um die produzierte Energie, die nicht verbraucht wird, speichern zu können.
+Außerdem muss der Speicher einen hohen Wirkungsgrad haben. Dafür eignen sich, nach heutigem Kenntnisstand und unter Berücksichtigung der Verfügbarkeit, entwickelte
+Lithium-Ionen-Batterien am besten.\footnote{https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator} Diese haben beim Laden und Entladen einen Wirkungsgrad von 98 Prozent oder
+mehr.
+\subsubsection{Kompaktgerät}
+In nachhaltigen Häusern werden heutzutage oft Kompaktgeräte eingesetzt, welche die Warmwasserbereitung, Gebäudeheizung und die Gebäudelüftung kombinieren. Durch eine Solaranlage steigert sich die Umwandlungsrate des Geräts nochmal um ein Vielfaches. Das Kompaktgerät nutzt die Wärme der Umgebungsluft, bringt sie auf ein höheres Temperaturniveau und stellt sie der Lüftung zur Verfügung. Dazu entzieht eine Wärmepumpe der Fortluft Wärme, welche zur Erhitzung der eingeführten Frischluft verwendet werden kann. Das Kompaktgerät verbraucht 11 kWh pro Jahr und Quadratmeter. Unser Haus hat ungefähr eine Wohnfläche von 200m\textsuperscript{2}(2 Etagen * 10m * 10m). Daraus folgt ein jährlicher Stromverbrauch von 11 kWh/m\textsuperscript{2}*200m\textsuperscript{2}=2200 kWh.\footnote{http://www.energieportal24.de/forum/topic,8910,-verbrauchswerte-lwz-403-sol.html}
+\subsubsection{Gesamter Stromverbrauch}
+Ein 4-Personen Haushalt in Deutschland verbraucht durchschnittlich 3000 kWh pro Jahr. Hinzu kommen nochmals 2200 kWh für das Kompaktgerät. Daraus ergibt sich ein jährlicher Energieverbrauch von 5.200 kWh.
+\newpage
+%3.2 Überprüfung Konzepte durch Berechnungen
+
+\subsection{Überprüfung Konzepte durch Berechnungen}
+%3.2.1 Photovoltaikanlage
+\subsubsection{Photovoltaikanlage}
+Ein Solarmodul mit einer Fläche von 10 m\textsuperscript{2} produziert in Deutschland pro Jahr rund
+1000 kWh. Dabei haben die Solarzellen einen Wirkungsgrad von durchschnittlich 25 Prozent.\footnote{https://heizung-sanitaer-kaemper.de/heizen/photovoltaik/} Dieses bedeutet, dass dieser Anteil der Sonnenenergie in Strom umgewandelt werden kann. Wir benutzen ein Flachdach für das Haus, da so mehr Platz für
+zusätzliche Solarzellen zur Verfügung steht. Bei der Fläche des Daches gehen wir von
+12m*13m=156m\textsuperscript{2} aus. Allein hiermit können wir rund 15 Solarmodule auf dem Dach montieren, welche somit 15.600 kWh im Jahr erzeugen. Zur Vergrößerung der Fläche werden noch weitere Module hinzugefügt. Sie haben die Hälfte der insgesamt vorhandenen Fläche und können bei hoher Sonneneinstrahlung ausgefahren werden. Diese erzeugen zusätzlich 7800 kWh. Damit könnten die Solarzellen jährlich durchschnittlich 23.400 kWh Strom produzieren.
+ 
+%3.2.2 Wasserturbine
+\subsubsection{Wasserturbine}
+Um insgesamt 5 Turbinen in die Abwasserleitung zu bauen, wird zuallererst wiederverwertbares
+Abwasser benötigt. Dieses kann eine schlechte Wasserqualität besitzen, jedoch sollte es nicht
+Essensreste oder sonstige Sachen beinhalten, da diese möglicherweise die Turbinen verstopfen
+könnten. Das benutzbare Wasser entsteht zum Beispiel beim Waschgang. Hierbei wird dem
+sauberen Wasser lediglich Waschpulver bzw. Weichspüler hinzugefügt, weswegen es jedoch nicht
+verunreinigt wird:
+\newline
+Wasserverbrauch pro Waschgang: ca. 40l\footnote{https://praxistipps.focus.de/
+wasserverbrauch-waschmaschine-im-jahr-pro-waschgang\_46559}
+\newline
+$\longrightarrow$ 4 Personen benutzen die Waschmaschine durchschnittlich 3 mal/Woche -
+daraus folgt das Abwasser der Waschmaschine mit:
+\newline
+40l * 3mal/Woche * 52Wochen = 6240l/Jahr = 17l/Tag
+\newline
+Zudem kann Reinigungswasser verwendet werden, um die Turbinen anzutreiben (Hände waschen, Abwaschen, Duschen, Baden):
+\newline
+Hände waschen: 1,5l/Waschen * 4mal/Tag * 4 Personen = 24l/Tag
+\newline
+Abwaschen: 20l/Waschgang * 3mal/Tag = 60l/Tag
+\newline
+Duschen, Baden: 6min * 18l/min\footnote{https://www.saxoboard.net/wasserverbrauch-duschen.html} * 2mal/Tag (4 Personen duschen jeden zweiten Tag)= 216l/Tag
+\newline
+Alle Wasserverbräuche ergeben 17l/Tag + 24l/Tag + 60l/Tag + 216l/Tag = 317l/Tag, welches zur Energiegewinnung genutzt werden kann.
+\newline
+Da jetzt das wiederverwertbare Abwasser berechnet wurde, können die Berechnungen zu den
+Wasserturbinen folgen. Hier sollte zuerst der Volumenstrom ermittelt werden, d.h. wie viel Wasser
+in einer Sekunde durch den Querschnitt des genutzten Rohres fließt:
+\newline
+Q(Volumenstrom) = v(Fließgeschwindigkeit) * A(Querschnitt des Rohres) = ø6m/s * (ø0,075m/
+2)\textsuperscript{2} * Pi = 0,0265m\textsuperscript{3}/s
+\newline
+Mithilfe des Volumenstroms kann nun die Leistung der Turbinene mit dieser Formel berechnet
+werden:
+\newline
+P = g * Q * p(Dichte Wasser) * Fallhöhe(gedachte Fallhöhe: 1,5m) * n(Wirkungsgrad Turbine)
+\newline
+Jetzt werden die Werte in die Formel eingesetzt:
+\newline
+P = 9,81m/s\textsuperscript{2} * 0,0265m\textsuperscript{3}/s * 1000kg/m\textsuperscript{3} *
+1,5m * 0,9 = 352W
+\newline
+Weiterhin wird im folgenden Abschnitt die Laufzeit der Turbinen pro Tag ermittelt:
+\newline
+t(Zeit) = Menge an Wasser / Q = 317l/Tag / 26,5l/s = 12s
+\newline
+\par
+Da die Laufzeit der Turbine pro Tag nur 12s beträgt, kann man jetzt schon sagen, dass sie sich
+wahrscheinlich nicht lohnen wird:
+\newline
+P = E / t $\vert$ *t
+\newline
+E = P * t = 352W * 12s = 4224Ws/Tag
+\newline
+Diese errechnete Energie kann nun in Wattstunden umgerechnet werden, indem man sie durch
+3600 teilt:
+\newline
+4224Ws/Tag / 3600 = 1,17Wh/Tag
+\newline
+Nun kann man die Energieumwandlung für ein Jahr berechnen und anschließend die
+Kilowattstunden ermitteln:
+\newline
+1,17Wh/Tag * 365Tage / 1000 = 0,427kWh/Jahr
+\newline
+Das ist der wie zu erwartende sehr geringe Energieumwandlungsbetrag für eine Turbine. Da aber
+insgesamt 5 vorhanden sind, ist eine Multiplikation mit 5 nötig:
+\newline
+E = 0,427kWh/Jahr * 5 = 2,135kWh/Jahr
+\newline
+Aufgrund der Niedrigkeit des ausgerechneten Endergebnisses, würden sich Turbinen in der
+Abwasserleitung in keinem Fall lohnen.
+%3.2.3 Kinetischer Fußboden
+\subsubsection{Kinetischer Fußboden}
+Beim Auftreten auf eine Bodenplatte des kinetischen Fußbodens wird Leistung von 5 Watt
+umgesetzt.\footnote{https://www.trendsderzukunft.de/5-watt-strom-pro-schritt-bodenkachelnliefern-bei-beruehrung-energie/} Ein Schritt dauert ca. 1 Sekunde, weswegen man die Energie mit
+der Formel \par E = P * t berechnen kann. Ein 4 - Personen - Haushalt tätigt schätzungsweise 5.000
+Schritte pro Tag im gesamten Haus. Daher werden bei 5000 Sekunden (mit 1 Schritt = 1 Sekunde) jeweils 5 Watt umgesetzt. Beides
+multipliziert ergibt eine Energie von 25.000 Wattsekunden (Ws) pro Tag, was umgerechnet rund
+7 Wh sind. Über ein Jahr verteilt würden die Platten 2,55 kWh erzeugen, was sich auch nicht lohnen würde.
+\newpage
+%3.3 Finanzielle Aspekte
+\subsection{Finanzielle Aspekte}
+Die gesamte Photovoltaikanlage mit den ausfahrbaren Modulen umfasst ca. eine Fläche von 234m\textsuperscript{2}(156m\textsuperscript{2} + 78m\textsuperscript{2}). Um ein Kilowatt Peak durch Solarenergie zu erzeugen, werden in Deutschland durchschnittlich 10m\textsuperscript{2} Photovoltaik-Anlage benötigt. Demzufolge würden die Solarmodule näherungsweise 23 kWp erzeugen. Ein Kilowatt Peak umfasst durchschnittlich einen Preis von 1600 €.\footnote{https://de.wikipedia.org/wiki/Photovoltaik}. Somit hat die Anlage einen finanziellen Umfang von insgesamt 36.800 Euro.
+Der Energiespeicher hat einen finanziellen Umfang von rund 16000 Euro und das Kompaktgerät kostet 15000 €. Aufgrund des geringen Mehrwerts der Bodenplatten und der Turbinen entschieden wir uns dazu, sie nicht mit aufzunehmen.
+Eine energieeffiziente Aufrüstung des Einfamilienhauses kostet letztendlich 67.800 Euro. 
+\\
+Der überschüssige Strom kann natürlich verkauft werden und in das öffentliche Netz eingespeist werden. Bei einem angenommenen durchschnittlichen erzielbaren Preis von ca. 20 Cent je kWh ergibt sich je Jahr bei einer Überkapazität von ca. 23.400 kWh – 5200 kWh = 18.200 kWh ein Gewinn von 3640,-€ je Jahr. Somit hat sich die gesamte Anlage allein dadurch nach ca. 19 Jahren rentiert. Berücksichtigt man zusätzlich die eigene Einsparung der Stromkosten mit einem Preis von zukünftig ca. 50 Cent je kWh, ergibt sich für die durch die Familie zu verbrauchenden 5200 kWh eine weitere Ersparnis von 2600,-€ je Jahr. Dieses berücksichtigt, hätte sich die Anlage mit 67.800,-€ : (3460,-€ + 2600,-€) nach ca. 11 Jahren rentiert.
+%3.4 Bauplan für 3D-Modell-Haus
+\subsection{Bauplan für 3D-Modell-Haus}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Bauplan Erdgeschoss.png}
+\par
+\tiny{Quelle: https://home.by.me/de/ (eigene Darstellung), 29.04.2021}
+\caption[Erdgeschoss von oben]{Erdgeschoss von oben}
+\end{center}
+\end{figure} 
+
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Bauplan Obergeschoss.png}
+\par
+\tiny{Quelle: https://home.by.me/de/ (eigene Darstellung), 29.04.2021}
+\caption{Obergeschoss von oben}
+\end{center}
+\end{figure}
+
+\par
+\par
+\par
+\par
+\newpage
+
+\section{Drucken des selbsterstellten 3D-Modells}
+Zunächst muss digital ein 3D-Modell des zu druckenden Objekts erstellt werden. Dafür nutzten
+wir das Programm „Autodesk Fusion“. Dort kann man verschiedene Tools verwenden, um eine
+Struktur zu erstellen. Die entstandene sogenannte G-CODE-Datei wird dann in ein Programm
+namens „Ultimaker Cura“ importiert.\footnote{https://ultimaker.com/} Dieses Programm wurde speziell für den 3D-Drucker, den wir
+verwendeten, erstellt. Dort geschieht das „Slicing“. Dabei wird das Objekt, wie schon im Namen
+gesagt, in mehrere Schichten zerlegt. Jede dieser Schichten ist je nach Einstellung 0,5 bis 1mm
+dick. Die finale Datei kann dann beispielsweise mithilfe eines USB-Sticks an den Drucker
+weitergegeben werden. Dieser besteht aus einer vertikal verschiebbaren Druckfläche und zwei
+beweglichen nach unten ausgerichteten Düsen. Wir verwendeten nur eine der beiden. Zunächst
+werden die Arbeitsplatte und Düsen aufgewärmt. Das ist wichtig, da das Druckmaterial nur bei
+erhöhter Temperatur verformbar ist. Jetzt beginnt das tatsächliche Drucken. Die Düsen beginnen
+knapp über der Arbeitsplatte Material auszugeben und die unterste der o.g. Schichten zu bilden.
+Ist diese vervollständigt, fährt die Arbeitsplatte um die vorgegebene Dicke der Schichten nach
+unten und die zweite Schicht wird gedruckt. Die Düsen selbst können sich nicht vertikal bewegen.
+Bei unserem 3D-Modell druckten wir das Haus, die Solarplatten und die Fußbodenplatten einzeln
+und verbanden diese anschließen mit Silikonkleber. Die Fenster des Hauses sind rund und nicht
+rechteckig, da diese Form leichter zu verwirklichen ist. Der 3D-Drucker kann nicht, oder nur
+fehlerhaft, Objekte drucken, ohne dass sich etwas darunter befindet. Daher erstellten wir das
+Haus so, dass es mit dem Dach nach unten gerichtet gedruckt wird und der Fußboden und die
+Solarplatten später hinzugefügt werden können.
+
+
+\section{Gemeinsamkeiten und Unterschiede des erstellten Hauses zu schon gebauten
+Energiesparhäusern}
+Heutzutage gibt es verschiedene Typen von Energiesparhäusern, unter anderem
+Niedrigenergiehäuser, Passivhäuser, Sonnenhäuser, Nullenergiehäuser und Plusenergiehäuser.
+Unser Haus ähnelt einem Plusenergiehaus, welches die benötigte Energie komplett autonom
+erzeugt und auch noch mehr Energie produziert, als eigentlich für den Haushalt benötigt werden. Die größten energietechnischen Unterschiede bestehen zwischen unserem und einem
+Passivhaus. Dieses zeichnet sich durch seine weitgehende Wärmedämmung und -rückgewinnung
+aus. Hierfür werden energieeffiziente Lüftungssysteme verwendet, die gleichzeitig die Heizung
+übernehmen. Die Gebäudehülle wird darüberhinaus mit Dämmungen versehen. Am wirksamsten
+sind Vakuumdämmstoffe, wie zu Beispiel ein Hochvakuum. Das Hochvakuum leitet die Wärme bis
+zu 20-mal schlechter als typische Dämmstoffe\footnote{https://www.energie-experten.org/bauen-und-sanieren/daemmung/aussendaemmung/vakuumdaemmung}.
+\par
+Weiterhin fällt unser erstelltes Haus besonders durch die ausfahrbaren Solarmodule auf. Diese können platzsparend eingefahren werden und bei einer günstigen Sonnenstrahlung zur Energiegewinnung hochgefahren werden.
+\newpage
+%6 Zusammenfassung
+\section{Zusammenfassung}
+Im Zuge dieser Arbeit erstellten wir ein effizientes, autonomes und futuristisches Energiesparhaus. Dieses erzeugt pro Jahr durchschnittlich 23.400 kWh und stellt somit gegenüber den benötigten 5200 kWh einen enormen Energieüberschuss dar.
+Hiermit wäre die zusätzliche Versorgung weiterer Haushalte möglich.
+\\
+Zur Erstellung dieses Hauses kombinierten wir verschiedene Konzepte und setzten diese anschließend mithilfe eines 3D-Drucks modellhaft um. Dabei stellten wir fest, dass zwei der Entwürfe nicht effizient genug
+gewesen wären und entschlossen uns daher, diese wegzulassen. Unsere Ziele erreichten wir damit
+vollständig. 
+\\
+In unseren Berechnungen verwendeten wir jedoch ausschließlich Durchschnittswerte, welche natürlich von Haushalt zu Haushalt unterschiedlich sein können. Zudem haben wir auch nicht alle Kosten mit einbezogen (bspw. kein Einbau der Solarmodule), sondern ausschließlich die Kaufpreise der Module betrachtet. 
+\\
+In einer eventuellen Fortführung dieser Arbeit könnte man sich auf die spezifische
+\\
+Wärmedämmung und auf die Komprimierung der genutzten Fläche konzentrieren. Zudem könnte
+man ein Haus aus nachhaltigen Baumaterialien in Erwägung ziehen.
+Es war eine interessante Erfahrung für uns gewesen, nach möglichen Konzepten des
+Energiesparens zu recherchieren und diese in unsere Berechnungen einfließen zu lassen.
+Außerdem begeisterten wir uns für den Umgang mit dem 3D-Drucker.
+\\
+Abschließend kann man sagen, dass die Menschheit vor einer großen Aufgabe im Bezug zum
+Klimaschutz steht. Damit Barack Obamas Wunsch erfüllt wird, muss alles daran gesetzt werden,
+diese Aufgabe zu erfüllen.
+\newpage
+\section{Anhang}
+\par
+\subsection{Abbildungen des entworfenen Energiesparhauses}
+\textcolor{white}{text}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Haus_gesamt.png}
+\par
+\tiny{Quelle: https://home.by.me/de/ (eigene Darstellung), 29.04.2021}
+
+\caption{Gesamtes Haus}
+
+
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Erdgeschoss.png}
+\tiny{Quelle: https://home.by.me/de/ (eigene Darstellung), 29.04.2021}
+\par
+\caption{Erdgeschoss}
+\end{center}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/erstes_Obergeschoss.png}
+\par
+\tiny{Quelle: https://home.by.me/de/ (eigene Darstellung), 29.04.2021}
+\par
+\caption{Obergeschoss}
+\end{center}
+\end{figure}
+
+\textcolor{white}{text}
+\newpage
+
+%7.2 3D-Haus-Modell
+\subsection{3D-Haus-Modell}
+\textcolor{white}{text}
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Bild1.png}
+\par
+\tiny{Quelle: https://www.autodesk.de/products/fusion-360 (eigene Darstellung), 27.03.2021}
+\caption{3D-Modell Haus}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.52]{0 ASG Klasse 9/Bild2.png}
+\par
+\tiny{Quelle: https://www.autodesk.de/products/fusion-360 (eigene Darstellung), 27.03.2021}
+\caption{3D-Modell Solarplatten}
+\end{center}
+\end{figure}
+
+
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[scale=0.5]{0 ASG Klasse 9/Bild3.png}
+\par
+\tiny{Quelle: https://www.autodesk.de/products/fusion-360 (eigene Darstellung), 27.03.2021}
+\caption{3D - Modell kinetischer Fußboden}
+\end{center}
+\end{figure}
+\newpage
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[scale=0.2]{IMG-20210508-WA0000.jpg}
+\caption{Fertiges Haus}
+\end{center}
+\end{figure}
+\newpage
+\textcolor{white}{text}
+\newpage
+\section{Literatur- und Quellenverzeichnis }
+%Literaturverzeichnis
+
+\renewcommand{\refname}{\large Internetquellen}
+\subsection{Literatur}
+\begin{thebibliography}{tiefe}
+%\bibitem[n]{Verweisname} \url{quelle} (herausgegeben von Vorname Nachname;) zugegriffen am dd.mm.yyyy um hh.mm Uhr
+
+
+\bibitem[1] {Kosten Photovoltaikanlage} \url{https://www.solarwatt.de/photovoltaikanlage/photovoltaikanlage-kaufen/photovoltaikanlage-kosten},herausgegeben von Ullrich Bemmann, zugegriffen am 28.04.2021
+\bibitem[2] {Geschirrspüler vs. Abwaschen} \url{https://www.gelbeseiten.de/ratgeber/hg/}, herausgegeben von Sarah
+Berger, zugegriffen am 23.03.2021
+\bibitem[3] {Solarzellen} \url{https://www.wegatech.de/ratgeber/photovoltaik/grundlagen/
+solarzelle/}, herausgegeben von Karl Dienst, zugegriffen am 03.03.2021
+\bibitem[4] {Bestandteile Energiesparhäuser} \url{https://www.grin.com/document/204911}
+,herausgegeben von Nilo Gora, zugegriffen am 09.02.2021
+\bibitem[5] {Leistung Wasserkraftwerk} \url{https://rechneronline.de/wasserkraft/}
+,herausgegeben von Jürgen Kummer, zugegriffen am 02.04.2021
+\bibitem[6] {test hallo} \url{https://de.wikipedia.org/wiki/Passivhaus#Geschichte_und_Ausblick},\par siehe Versionsgeschichte, zugegriffen am 07.04.2021
+\bibitem[7] {Geschichte Anmkerkungen} \url{https://passipedia.de/grundlagen/
+anmerkungen_zur_geschichte},siehe \par Versionsgeschichte,zugegriffen am 23.03.2021
+\bibitem[8]{Energiesparhaus 2} \url{https://www.sto.at/de/bauherren/fassade_1/
+waermedaemmung/energiesparhaeuser.html},herausgegeben von Christian Stoll, zugegriffen am
+02.05.2021
+\bibitem[9]{Volumenstrom} \url{https://studyflix.de/ingenieurwissenschaften/volumenstrom-1543},siehe Versionsgeschichte,zugegriffen am 02.04.2021
+\bibitem[10]{Kosten Energiespeicher} \url{https://www.energieheld.de/solaranlage/photovoltaik/
+stromspeicher/kosten},herausgegeben von Michael Suer,zugegriffen am 28.04.2021
+\bibitem[11]{Tipps Hände waschen} \url{https://www.baunetzwerk.biz/richtig-haendewaschenund-dabei-wasser-sparen},\par herausgegeben von Maike Sutor-Fiedler, zugegriffen am 23.03.2021
+\bibitem[12]{Geschichte des Wohnens} \url{https://d-nb.info/1137209046/34} ,herausgegeben von
+Hans Jürgen Teuteberg; zugegriffen am 09.02.2021
+\bibitem[13]{Stromverbrauch pro Haushalt} \url{https://www.vergleich.de/stromverbrauch.html}
+,zugegriffen am 06.03.2021
+\bibitem[14]{realer Erwartungen an Passivhaus} \url{https://www.wohnbund.de/wp-content/
+uploads/2019/10/wohnbund-info_2009_1.pdf},siehe Versionsgeschichte,zugegriffen am 09.02.2021
+%\bibitem[]{} \url{} herausgegeben von ; zugegriffen am dd.mm.yyyy um hh.mm Uhr
+
+\setcounter{subsection}{1}
+\subsection{Quellen}
+
+\bibitem[15]{Klimaschutz} \textsuperscript{1}\url{http://www.die-klimaschutz-baustelle.de/
+zitate_klimaschutz_in_bildern.html},herausgegeben von Beate Massmann,zugegriffen am
+07.02.2021
+\bibitem[16]{Pavegen} \textsuperscript{2}\url{https://heizung.de/heizung/wissen/geschichte-der-heizung-der-weg\par -vom-feuer-zur-heizungsanlage/},\par herausgegeben von Jeanette Kunde,zugegriffen am 03.03.2021
+\bibitem[17] {Plattenbau} \textsuperscript{3}\url{https://de.wikipedia.org/wiki/Plattenbau}, siehe Versionsgeschichte,\par zugegriffen am 25.02.2021
+\bibitem[18] {Anmerkungen Geschichte Passivhaus} \textsuperscript{4}\url{https://passiv.de/former_conferences/Passivhaus_D/Geschichte_Passivhaus.html},herausgegeben von Dr. Wolfgang Feist, zugegriffen am 09.02.2021
+\bibitem[19]{Plattenbau} \textsuperscript{5}\url{https://de.wikipedia.org/wiki/Passivhaus}, siehe Versionsgeschichte, zugegriffen am 09.02.2021
+\bibitem[20] {Solarzellen 2} \textsuperscript{6}\url {https://www.solaranlage.de/technik/solarzellen} ,herausgegeben
+von Moritz Kothe, zugegriffen am 03.03.2021
+\bibitem[21] {Solarzellen 2} \textsuperscript{7}\url {https://www.trendsderzukunft.de/
+5-watt-strom-pro-schritt-bodenkacheln-liefern-}
+\url{bei-beruehrung-energie/} ,herausgegeben
+von Achmed Kammas, zugegriffen am 05.04.2021
+\bibitem[22] {Solarzellen 2} \textsuperscript{8}\url {https://www.ingenieur.de/technik/fachbereiche/energie/brasilianischer-fussballnachwuchs-erzeugt-laufen-strom-fuers-flutlicht/
+} ,herausgegeben
+von Ken Fouhy, zugegriffen am 06.04.2021
+\bibitem[23]{Lithium-Ionen-Akku} \textsuperscript{9}\url{https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator},siehe Versionsgeschichte,zugegriffen am 05.03.2021
+\bibitem[24] {hewhbdcehwb} \textsuperscript{10}\url{http://www.energieportal24.de/forum/topic,8910,-verbrauchswerte-lwz-403-sol.html}, siehe Versionsgeschichte, zugegriffen am 10.05.2021
+\bibitem[25] {Solarzellen 2} \textsuperscript{11}\url {https://heizung-sanitaer-kaemper.de/heizen/photovoltaik/} ,herausgegeben von Marc Kämper, zugegriffen am 08.04.2021
+\bibitem[26] {Wasserverbrauch Waschmaschine} \textsuperscript{12}\url{https://praxistipps.focus.de/wasserverbrauchwaschmaschine-im-jahr-}
+\url{pro-waschgang_46559}, herausgegeben von Patrick Achilles, zugegriffen am 23.03.2021
+\bibitem[27] {Wasserverbrauch und Kosten beim Duschen} \textsuperscript{13}\url{https://www.saxoboard.net/wasserverbrauch-duschen.html},herausgegeben von Enrico Dauksch, zugegriffen am 23.03.2021
+\bibitem[28] {Solarzellen 2} \textsuperscript{14}\url { https://www.trendsderzukunft.de/5-watt-strom-pro-schritt-}
+\url{bodenkachelnliefern-bei-beruehrung-energie/} ,s.a.a.O.
+\bibitem[29] {Solarzellen 2} \textsuperscript{15}\url { https://de.wikipedia.org/wiki/Photovoltaik} ,siehe Versionsgeschichte, zugegriffen am 10.04.2021
+\bibitem[30] {ewrcver} \textsuperscript{16}\url{https://ultimaker.com/},herausgegeben von Martijn Elserman,zugegriffen am 21.04.2021
+\bibitem[31] {Solarzellen 2} \textsuperscript{17}\url{ https://www.energie-experten.org/bauen-und-sanieren/daemmung/aussendaemmung/vakuumdaemmung} ,herausgegeben von Robert John Doelling, zugegriffen am 10.05.2021
+\end{thebibliography}
+
+\newpage
+\hspace*{\fill}\Large\textbf{Eidesstattliche Erklärung} \hspace*{\fill}
+\par
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+\textcolor{white}{text}
+Hiermit erklären wir an Eides statt, dass wir die vorliegende Arbeit selbstständig und nur mit den angegebenen Hilfsmittel verfasst haben.
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\par
+\textcolor{white}{text}
+\par
+\vspace{50pt}
+\noindent\rule{5cm}{.4pt}\hfill\rule{5cm}{.4pt}\par
+\noindent Ort, Datum \hfill Unterschriften
+\end{document}

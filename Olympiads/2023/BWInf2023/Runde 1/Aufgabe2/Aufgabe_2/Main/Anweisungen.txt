@@ -1,0 +1,9 @@
+#Robert Vetter, Aufgabe 2
+1 Alle Dateien extrahieren und anschließend Datei "Main.pde" öffnen
+2 Durchlesen der möglichen Parameter (Z. 1 - 15)
+3 Starten des Processing-Scripts
+4 Variieren der Parameter (Hinweise in Konsole beachten)
+5 Simulation pausieren ('p') / einen Screenshot machen ('s')
+6 Skript schließen und "createPixelArt.py" öffnen
+7 Starten des Python-Scripts (achten Sie darauf, dass Sie die "PILLOW" Bibliothek installiert haben)
+8 Der Screenshot mit der Bezeichnung "screenshot0.jpg" wurde nun in ein Pixelbild mit dem Namen "MainpixelArt.png" umgewandelt (könnte wenige Sekunden in Anspruch nehmen)

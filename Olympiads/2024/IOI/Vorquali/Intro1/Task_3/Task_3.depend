@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1693143594 source:x:\3 robert\0 asg klasse 12\12 olympiaden\ioi\vorquali\intro1\task_3\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+	<climits>
+	<map>
+
